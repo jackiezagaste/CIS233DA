@@ -1,0 +1,21 @@
+body{
+  line-height: 1.6;
+  margin: 2em;
+}
+th{
+  background: color #001f3f;
+  color: #fff;
+  padding: 0.5em 1em;
+}
+td{
+  border-top: 1px solid #eee;
+  padding: 0.5em 1em;
+}
+input{
+  cursor: pointer;
+}
+
+/* column types */
+.name-col{
+  text-align: left;
+}
