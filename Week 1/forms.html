@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Form Element Examples</h1>
+    <form>
+      <table>
+        <tr>
+          <td>
+            <input type="text" id="firstName" placeholder="First Name" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" id="newButton" value="New" />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="trueFalse" /> I am not a robot</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="date" id="registrationDate" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="email"
+              id="userEmail"
+              required
+              placeholder="email address"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" id="age" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="file" id="uploadFile" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Do you like pass fail?
+            <input type="radio" id="no" name="gradeType" /> No
+            <input type="radio" id="yes" name="gradeType" /> Yes
+            <input type="radio" id="neutral" name="gradeType" /> Dunno
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select id="students" style="width: 200px">
+              <option value="Abdul">Abdul</option>
+              <option value="Alan">Alan</option>
+              <option value="Devan">Devan</option>
+              <option value="Gavin">Gavin</option>
+              <option value="Irvin">Irvin</option>
+              <option value="Jahaziel">Jahaziel</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea id="bigtext" style="width: 200px; height: 200px;"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="reset">
+          </td>
+        </tr>
+          <tr>
+            <input type="submit" />
+          </tr>
+        </td>
+      </table>
+    </form>
+  </body>
+</html>
