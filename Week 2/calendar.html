@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: repeat(7, 75px);
+        background-color: rgb(0, 0, 0);
+        gap: 6px;
+        color: white;
+      }
+      month {
+        grid-column: span 7;
+        background-color: blue;
+        height: 30px;
+        width: 100%;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      leader,
+      trailer {
+        background-color: rgb(60, 60, 60);
+      }
+      leader,
+      trailer,
+      day {
+        border-radius: 8px;
+        height: 60px;
+        width: 100%;
+      }
+      leader {
+        grid-column: span 3;
+      }
+      trailer {
+        grid-column: span 4;
+      }
+      day {
+        box-sizing: border-box;
+        text-align: right;
+        padding: 2px 4px 0px 0px;
+        background-color: lightblue;
+      }
+      #valentine {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <month>February 2023</month>
+    <leader></leader>
+    <day>1</day>
+    <day>2</day>
+    <day>3</day>
+    <day>4</day>
+    <day>5</day>
+    <day>6</day>
+    <day>7</day>
+    <day>8</day>
+    <day>9</day>
+    <day>10</day>
+    <day>11</day>
+    <day>12</day>
+    <day>13</day>
+    <day id="valentine">14</day>
+    <day>15</day>
+    <day>16</day>
+    <day>17</day>
+    <day>18</day>
+    <day>19</day>
+    <day>20</day>
+    <day>21</day>
+    <day>22</day>
+    <day>23</day>
+    <day>24</day>
+    <day>25</day>
+    <day>26</day>
+    <day>27</day>
+    <day>28</day>
+    <trailer></trailer>
+  </body>
+</html>
