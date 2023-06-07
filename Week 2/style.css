@@ -1,0 +1,129 @@
+/* color palate */
+
+/* blue #5B6FEC rgb(91, 111, 236)
+periwinkle #7C83D4 rgb(124, 131, 212)
+light blue #A2B5F7 rgb(162, 181, 247)
+pale blue #DDEBFF rgb(221, 235, 255) */
+
+/* calendar */
+
+/* I tried using the webfont kit but it was not working for me */
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 75px);
+  gap: 6px;
+  color: rgb(91, 111, 236);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* width: 100%;
+  height: 100%; */
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* max-width: 600px; */
+}
+
+month {
+  grid-column: span 7;
+  background-color: rgb(221, 235, 255);
+  height: 30px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+leader,
+trailer {
+  background-color: rgb(60, 60, 60);
+}
+leader,
+trailer,
+day {
+  border-radius: 8px;
+  height: 60px;
+  width: 100%;
+}
+leader {
+  grid-column: span 3;
+}
+trailer {
+  grid-column: span 4;
+}
+day {
+  box-sizing: border-box;
+  text-align: right;
+  padding: 2px 4px 0px 0px;
+  background-color: rgb(162, 181, 247);
+}
+#valentine {
+  background-color: red;
+}
+
+/* logo */
+
+main{
+  display: flex;
+  justify-content: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size:xx-large;
+  color: rgb(124, 131, 212);
+  flex-wrap: nowrap;
+  background-image: url("./images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+  }
+  
+  footer{
+  display: grid;
+  grid-template-columns: 75% 25%;
+  background-color: rgb(91, 111, 236);
+  height: 20vh;
+  align-items: center;
+  }
+  
+  .nav_links{
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+  }
+  
+  .logo_links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  ul{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  list-style-type: none;
+  flex-wrap: wrap;
+  }
+  
+  a{
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .center-screen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(91, 111, 236, 0.5);
+    text-align: center;
+  }
