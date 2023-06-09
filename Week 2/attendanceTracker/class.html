@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Class</title>
+  </head>
+  <body>
+    <nav id="mynav">
+      <ul>
+        <li class="active"><a href="class.html">Class Maintenance</a></li>
+        <li class="inactive"><a href="student.html">Student Maintenance</a></li>
+        <li class="inactive"><a href="attendance.html">Attendance Taker</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Class Maintenance</h1>
+      <div id="itemWrapper">
+        <table>
+          <tr>
+            <td colspan="2">
+              <select multiple style="width: 100%">
+                <option>English 101</option>
+                <option>Remedial Reading</option>
+                <option>English Literature</option>
+                <option>Grammar</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                placeholder="Enter New Class"
+                style="width: 265px"
+              />
+            </td>
+            <td>
+              <button>Delete</button>
+              <button>Add</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
