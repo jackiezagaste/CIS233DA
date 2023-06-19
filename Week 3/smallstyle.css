@@ -1,0 +1,73 @@
+/* 
+light blue #DEEBF7 rgb(222, 235, 247)
+grey #AFABAB rgb(175, 171, 171)
+dark blue gray #8497B0 rgb(132, 151, 176)
+really light grey #E7E7E7 rgb(231, 231, 231)
+*/
+
+@font-face {
+  font-family: 'aliceregular';
+  src: url('./fonts/Alice-Regular-webfont.woff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#alice{
+  font-family: aliceregular;
+}
+
+#small{
+  display: inline;
+}
+
+body{
+  background-color: rgb(128, 128, 128);
+  color: black;
+}
+
+#weatherInfo{
+  background-color: rgb(222, 235, 247);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.smallContainer{
+  align-items: center;
+}
+
+#smallimage{
+  width: 250px;
+  float: right;
+}
+
+#medium{
+  display: none;
+}
+#large{
+  display: none;
+}
+
+/* buttons */
+.button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.button-container button{
+  margin-right: 10px;
+  background-color: rgb(231, 231, 231);
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
+button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
