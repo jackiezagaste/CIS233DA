@@ -34,19 +34,22 @@
     <div id="temp">98 F&deg;</div>
     <div id="time"></div>
     <img
-      src="./assets/images/bttn_park_1.PNG"
+      src="./assets/images/bttn_park_0.PNG"
       id="bttn_park"
       alt="parking brake button"
+      onclick="setBrake()"
     />
     <img
       src="./assets/images/bttn_trac_1.PNG"
       id="bttn_trac"
       alt="traction control button"
+      onclick="setTraction()"
     />
     <img
       src="./assets/images/bttn_batt_0.PNG"
       id="bttn_batt"
       alt="charge battery button"
+      onclick="chargeBattery()"
     />
     <img
       src="./assets/images/bttn_gas_0.PNG"
@@ -57,11 +60,18 @@
     <img
       src="./assets/images/shifter.png"
       id="bttn_shifter"
-      alt="moade shifter"
+      alt="mode shifter"
+      onclick="setMode()"
     />
-    <img src="./assets/images/start.PNG" id="bttn_start" alt="start button" />
+    <img
+      src="./assets/images/start.PNG"
+      id="bttn_start"
+      alt="start button"
+      onclick="tryLaunch()"
+    />
     <div id="msg"></div>
   </body>
   <script src="./assets/scripts/clock.js"></script>
   <script src="./assets/scripts/functions.js"></script>
+  <script src="./assets/scripts/launch.js"></script>
 </html>
