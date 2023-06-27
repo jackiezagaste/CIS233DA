@@ -1,0 +1,68 @@
+/* 
+light blue #DEEBF7 rgb(222, 235, 247)
+grey #AFABAB rgb(175, 171, 171)
+dark blue gray #8497B0 rgb(132, 151, 176)
+really light grey #E7E6E6 rgb(231, 230, 130)
+*/
+
+@font-face {
+  font-family: 'aliceregular';
+  src: url('./fonts/Alice-Regular-webfont.woff') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+#alice{
+  font-family: aliceregular;
+}
+
+@media screen and (min-width: 1024px) {
+  #large{
+    display: inline;
+    height: 100vh;
+  }
+
+  .large-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    grid-gap: 10px;
+    padding: 0 10px 10px 0;
+  }
+
+  .flex-container2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+.button-container3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 10px;
+}
+
+.button-container3 button{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 20px;
+  height: 100px;
+  width: 260px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+  #small{
+    display: none;
+  }
+  #medium{
+    display: none;
+  }
+}
