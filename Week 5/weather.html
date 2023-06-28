@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      #weather-container {
+        margin: 20px;
+      }
+
+      #location {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      #description {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Weather App</h1>
+
+    <div id="weather-container">
+      <h2 id="location"></h2>
+      <p id="description"></p>
+    </div>
+
+    <script>
+      // Function to get the weather data
+      function getWeather(latitude, longitude) {
+        const api_key = "baaf655940ea8030eb4f1da155c202ad"; // Replace with your actual API key from OpenWeatherMap
+        const api_url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${api_key}&units=metric`;
+
+        fetch(api_url)
+          .then((response) => response.json())
+          .then((data) => {
+            const locationElement = document.getElementById("location");
+            const descriptionElement = document.getElementById("description");
+
+            const location = data.name;
+            const temperature = data.main.temp;
+            const weatherDescription = data.weather[0].description;
+
+            locationElement.textContent = `Location: ${location}`;
+            descriptionElement.textContent = `Temperature: ${temperature}°C, ${weatherDescription}`;
+          })
+          .catch((error) => {
+            console.log("Error:", error);
+            const locationElement = document.getElementById("location");
+            locationElement.textContent =
+              "Failed to retrieve weather information.";
+          });
+      }
+
+      // Function to handle the geolocation success
+      function handleSuccess(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        getWeather(latitude, longitude);
+      }
+
+      // Function to handle the geolocation error
+      function handleError(error) {
+        console.log("Error:", error);
+        const locationElement = document.getElementById("location");
+        locationElement.textContent = "Failed to retrieve your location.";
+      }
+
+      // Function to retrieve the current location
+      function getCurrentLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(handleSuccess, handleError);
+        } else {
+          const locationElement = document.getElementById("location");
+          locationElement.textContent =
+            "Geolocation is not supported by your browser.";
+        }
+      }
+
+      // Call the getCurrentLocation function when the page loads
+      document.addEventListener("DOMContentLoaded", getCurrentLocation);
+    </script>
+  </body>
+</html>
