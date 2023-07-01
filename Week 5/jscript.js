@@ -1,6 +1,8 @@
 function getCountry(country) {
   var divObj;
 
+  let country = Obj.selectedIndex;
+
     for (let i = 1; i <= 5; i++) {
       let divObj = document.getElementById(`country${i}`);
       divObj.style.display = 'none';

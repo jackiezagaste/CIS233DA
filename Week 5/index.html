@@ -18,14 +18,33 @@
         <div id="small">
           <div id="weatherInfo">
             <div id="weatherInfo">
-              Currently 77&deg;
+
+              <div>
+                <select id="countrySelect" onchange="getCountry(this.value)">
+                  <option value="">Select a country</option>
+                  <option value="thailand">Thailand</option>
+                  <option value="japan">Japan</option>
+                  <option value="southkorea">South Korea</option>
+                  <option value="china">China</option>
+                  <option value="philippines">Philippines</option>
+                </select>
+              </div>  
+
+              <div id="country1" class="country-container">
+                <h1 id="thailand"></h1>
+                <img id="icon" src="./images/weatherikon.png" style="height: 30px; width: 30px;" alt="weather icon">
+                <div id="weatherInfo"></div>
+                <div id="uvi"></div>
+              </div>
+  
+              <!-- Currently 77&deg;
   
               <img
                 src="./images/weatherikon.png"
                 alt="weather ikon"
                 style="height: 18px"
               />
-              | Soul - South Korea | Hi: 81&deg; Lo:62&deg; | Humidity: 51%
+              | Soul - South Korea | Hi: 81&deg; Lo:62&deg; | Humidity: 51% -->
             </div>
           </div>
 
